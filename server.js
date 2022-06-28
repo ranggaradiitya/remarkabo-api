@@ -2,6 +2,9 @@ const express = require('express');
 const { MongoClient } = require('mongodb');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+
+const dotenv = require('dotenv').config();
+
 const routes = require('./routes');
 const errorHandler = require('./middlewares/errorHandler');
 
