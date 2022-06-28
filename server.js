@@ -2,7 +2,7 @@ const express = require('express');
 const { MongoClient } = require('mongodb');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-
+const { logger } = require('./utils/logger');
 const dotenv = require('dotenv').config();
 
 const routes = require('./routes');
@@ -33,5 +33,5 @@ app.use('/', routes);
 app.use(errorHandler);
 
 app.listen(port, () => {
-  console.log(`Server listening on port ${port}`);
+  logger.info(`Server started on port ${port}`);
 });
