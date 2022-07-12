@@ -8,10 +8,18 @@ exports.addNote = async (req, res, next) => {
     if (!title) {
       throw new Error('title is missing');
     }
+
+    const data = {
+      ...req.body,
+      createdAt: new Date(Date.now()).toISOString(),
+      updatedAt: new Date(Date.now()).toISOString(),
+    }
+
     // insert data to collection
-    const result = await notesCollection.insertOne(req.body);
+    const result = await notesCollection.insertOne(data);
+    // const objResult = JSON.parse(result);
     console.log(result);
-    res.status(200).json('Data successfully saved');
+    res.status(200).json({ message: 'Data successfully saved', _id: result.insertedId });
   } catch (error) {
     next(error);
   }
@@ -54,7 +62,7 @@ exports.updateNote = async (req, res, next) => {
     // update data collection
     const result = await notesCollection.updateOne(
       { _id: ObjectId(id) },
-      { $set: { title, note } }
+      { $set: { title, note, updatedAt: new Date(Date.now()).toISOString() } }
     );
     console.log(result);
     res.status(200).json('Data successfully updated');
