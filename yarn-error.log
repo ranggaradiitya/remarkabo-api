@@ -1,0 +1,51 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add passport-jwt
+
+PATH: 
+  C:\Users\RANGGA RADITYA\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\RANGGA RADITYA\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\150\DTS\Binn;C:\Users\RANGGA RADITYA\AppData\Roaming\Python\Python39\Scripts;C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin;C:\MinGW\bin;C:\Program Files\Dart\dart-sdk\bin;C:\Program Files\apache-maven-3.8.1\bin;C:\Program Files\Java\jdk-11.0.15.1\bin;C:\Program Files\Apache Software Foundation\Tomcat 9.0\bin;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\servlet-api.jar;C:\Program Files\PostgreSQL\14\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\RANGGA RADITYA\Downloads\flutter_windows_2.10.3-stable\flutter\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Users\RANGGA RADITYA\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\nodejs\node_modules\yarn\bin;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\MongoDB\Tools\100\bin;C:\Program Files\MongoDB\Tools;C:\ProgramData\chocolatey\bin;C:\Users\RANGGA RADITYA\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\RANGGA RADITYA\scoop\shims;C:\Program Files\Java\jdk-15\bin;C:\Users\RANGGA RADITYA\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Azure Data Studio\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.1.2\bin;C:\Users\RANGGA RADITYA\AppData\Local\Microsoft\WindowsApps;C:\Exercism;C:\Program Files\JetBrains\WebStorm 2021.2\bin;C:\Users\RANGGA RADITYA\AppData\Roaming\npm;C:\Program Files\heroku\bin;C:\Users\RANGGA RADITYA\AppData\Local\Microsoft\WindowsApps;C:\Users\RANGGA RADITYA\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\RANGGA RADITYA\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\JetBrains\WebStorm 2022.1.2\bin;C:\Users\RANGGA RADITYA\AppData\Local\Programs\mongosh;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;C:\Users\RANGGA RADITYA\bin\win-sudo\s
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.15.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Dev\devsaurus\deploy\api\node_modules\bcrypt\lib\binding\napi-v3\bcrypt_lib.node'
+
+npm manifest: 
+  {
+    "name": "remarkabo-api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "bcrypt": "^5.0.1",
+      "body-parser": "^1.20.0",
+      "cors": "^2.8.5",
+      "dotenv": "^16.0.1",
+      "express": "^4.18.1",
+      "jsonwebtoken": "^8.5.1",
+      "mongodb": "^4.7.0",
+      "passport": "^0.6.0",
+      "passport-local": "^1.0.0"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.18"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
